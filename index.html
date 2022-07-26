@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign up</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="signup-section">
+                <div class="content">
+                    <div class="greeting">
+                        <h1>Create an account</h1>
+                        <p>Welcome! Please enter your details</p>
+                    </div>
+                    <form>
+                        <div class="colum">
+                            <div class="row">
+                                <div class="input-element">
+                                    <label for="firstname">First name</label>
+                                    <input type="text" name="firstname" id="firstname" onkeyup="validateFirstName()" required>
+                                    <span class="firstname-error error"></span>
+                                </div>
+                                <div class="input-element">
+                                    <label for="lastname">Last name</label>
+                                    <input type="text" name="lastname" id="lastname" onkeyup="validateLastName()" required>
+                                    <span class="lastname-error error"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-element">
+                                    <label for="email">Email</label>
+                                    <input type="email" name="email" id="email" onkeyup="validateEmail()" required>
+                                    <span class="email-error error"></span>
+                                </div>
+                                <div class="input-element">
+                                    <label for="phone-number">Phone number</label>
+                                    <input type="text" name="phone" id="phone-number" onkeyup="validatePhone()" required>
+                                    <span class="phone-error error"></span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-element">
+                                    <label for="psw">Password</label>
+                                    <input type="password" name="password" id="psw" onkeyup="validatePassword()" required>
+                                    <p class="password-error error"></p>
+                                </div>
+                                <div class="input-element">
+                                    <label for="confirm-psw">Confirm password</label>
+                                    <input type="password" name="password" id="confirm-psw" onkeyup="validateConfirmPassword()" required>
+                                    <span class="confirm-password-error error"></span>
+                                </div>
+                            </div>
+                            <button type="submit">Create account</button>
+                            <p>Already have an account? <a class="alternative" href="#">Log in</a></p>
+                            
+                        </div>
+                    </form>
+                </div>
+        </div>
+
+
+        <div class="pic-section">
+        </div>
+    </div>
+    <script src="functions.js"></script>
+</body>
+</html>
+
